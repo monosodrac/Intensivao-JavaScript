@@ -33,7 +33,7 @@ const rosaClaro = {
 
 
 const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro];
-const opcoesTamanhos = ['41 mm', '45 mm'];
+const opcoesTamanho = ['41 mm', '45 mm'];
 // minhaLista[3]   pra acessar o campo 3
 
 let imagemSelecionada = 1;
@@ -41,8 +41,10 @@ let tamanhoSelecionado = 1;
 let corSelecionada = 1;
 
 function trocarImagem() {
+    //atualizar variável de controle da imagem
     const idOpcaoSelecionada = document.querySelector('[name="opcao-imagem"]:checked').id;
-    imagemSelecionada = idOpcaoSelecionada.charAt(0);
+    imagemSelecionada = idOpcaoSelecionada.charAt(0); //charAt(0) == caracter na posição 0
+    //mudar imagem de acordo com a opção selecionada
     imagemVisualizacao.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-' + imagemSelecionada + '.jpeg';
 }
 
@@ -51,9 +53,9 @@ function trocarTamanho() {
     const idOpcaoSelecionada = document.querySelector('[name="opcao-tamanho"]:checked').id;
     tamanhoSelecionado = idOpcaoSelecionada.charAt(0);
     //mudar o título do produto
-    tituloProduto.innerText = "Pulseira loop esportiva " + opcoesCores[corSelecionada].nome + " para caixa de " + opcoesTamanhos[tamanhoSelecionado];
+    tituloProduto.innerText = "Pulseira loop esportiva " + opcoesCores[corSelecionada].nome + " para caixa de " + opcoesTamanho[tamanhoSelecionado];
     //mudar o tamanho da imagem de acordo com a opção
-    if (opcoesTamanhos[tamanhoSelecionado] === '41 mm') {
+    if (opcoesTamanho[tamanhoSelecionado] === '41 mm') {
     imagemVisualizacao.classList.add('caixa-pequena');
     } else {
     imagemVisualizacao.classList.remove('caixa-pequena');
@@ -65,7 +67,7 @@ function trocarCor() {
     const idOpcaoSelecionada = document.querySelector('[name="opcao-cor"]:checked').id;
     corSelecionada = idOpcaoSelecionada.charAt(0);
     //trocar título da página
-    tituloProduto.innerText = "Pulseira loop esportiva " + opcoesCores[corSelecionada].nome + " para caixa de " + opcoesTamanhos[tamanhoSelecionado];
+    tituloProduto.innerText = "Pulseira loop esportiva " + opcoesCores[corSelecionada].nome + " para caixa de " + opcoesTamanho[tamanhoSelecionado];
     //trocar nome da cor
     nomeCor.innerText = 'Cor - ' + opcoesCores[corSelecionada].nome;
     //trocar imagens das miniaturas exibidadas
