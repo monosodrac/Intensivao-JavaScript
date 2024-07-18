@@ -1,2 +1,12 @@
-# Intensivao-JavaScript
- Fornecido gratuitamente pela Hashtag Treinamentos
+# Exercícios Práticos da Jornada Python
+
+Este repositório contém uma coleção de exercícios práticos desenvolvidos durante as aulas do Intesivão JavaScript, oferecido gratuitamente no YouTube pela Hashtag Treinamentos.
+
+## Sobre o Intensivão JavaScript
+
+O Intensivão JavaScript é uma série educacional dedicada a ensinar os fundamentos e técnicas avançadas da linguagem JavaScript. Com vídeos práticos e acessíveis, a Hashtag Treinamentos visa capacitar desenvolvedores de todos os níveis, desde iniciantes até avançados.
+
+## Estrutura do Repositório
+
+- **Exercícios**: Diretório contendo todos os exercícios práticos desenvolvidos ao longo das aulas.
+- **Recursos**: Pasta opcional com materiais complementares, arquivos de dados ou outros recursos úteis.
